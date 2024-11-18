@@ -210,7 +210,6 @@ In Stix v2.1, the Observed Data SDO uses the `object_refs` property to contian i
     "spec_version": "2.1",
     "id": "x-oca-event--f4b21ac5-da4e-4aa9-8546-500d60390d95",
     "created": "2022-07-15T18:42:31.000Z",
-    "modified": "2022-07-15T18:42:31.000Z",
     "action": "Network Connection Created",
     "host_ref": "x-oca-asset--77bbc76e-3318-427d-9454-06468b18d273",
     "provider": "EDR",
