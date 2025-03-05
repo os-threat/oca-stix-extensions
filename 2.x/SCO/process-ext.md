@@ -35,7 +35,7 @@ Adds an extension to the process object to include references to related playboo
 
 ### Email Client Process Created
 
-```
+```json
 {
   "type": "process",
   "spec_version": "2.1",
@@ -59,7 +59,7 @@ Adds an extension to the process object to include references to related playboo
 
 ### Outlook Email Client Opens Chrome Web Browser
 
-```
+```json
 {
   "type": "process",
   "spec_version": "2.1",
@@ -73,7 +73,7 @@ Adds an extension to the process object to include references to related playboo
     "extension-definition--f9dbe89c-0030-4a9d-8b78-0dcd0a0de874": {
       "extension_type": "property-extension",
       "operation_type": "created",
-      "name": chrome.exe",
+      "name": "chrome.exe",
       "win_event_code": "4688"
     }
   },

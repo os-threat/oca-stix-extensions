@@ -130,6 +130,7 @@ Where possible, references are made to existing STIX objects (ie. ip addresses, 
 The Observed Data SDO uses the `object_refs` property to contian id's of any observables, and each observable previously contained in the `object` property now needs to be provided with an `id` property as a minimum
 
 ```json
+
 [
   {
     "type": "observed-data",
@@ -184,11 +185,11 @@ The Observed Data SDO uses the `object_refs` property to contian id's of any obs
     "finding_type": "violation",
     "time_observed": "2019-07-18T19:06:20.459257Z",
     "severity": 80,
-    "src_ip_ref": "0",
-    "dst_ip_ref": "1",
-    "src_application_user_ref": "2",
-    "src_application_ref": "3",
-    "src_geo_ref": "8",
+    "src_ip_ref": "ipv4-addr--efcd5e80-570d-4131-b213-62cb18eaa6a8",
+    "dst_ip_ref": "ipv4-addr--5853f6a4-638f-5b4e-9b0f-ded361ae3812",
+    "src_application_user_ref": "user-account--0d5b424b-93b8-5cd8-ac36-306e1789d63c",
+    "src_application_ref": "software--a1827f6d-ca53-5605-9e93-4316cd22a00a",
+    "src_geo_ref": "x-oca-geo--ed82dd61-cc41-485b-b608-d278469e6259",
     "src_device": "Chrome",
     "ttp_tagging_refs": [
       "x-ibm-ttp-tagging--fa5c2b89-ede5-425e-8d65-95dedb2d444f"

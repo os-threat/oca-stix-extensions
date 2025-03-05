@@ -29,16 +29,17 @@ Adds an extension to the network-traffic object to contain RITA beacon informati
 }
 ```
 
-## Example
+## Stix 2.1 Example
 
-```
-{
+```json
+[
+  {
   "type": "network-traffic",
   "spec_version": "2.1",
   "id": "network-traffic--15a157a8-26e3-56e0-820b-0c2a8e553a2c",
-  "src_ref": "ipv4-addr--57a33521-9761-54a9-81de-3c11e441d86b",
+  "src_ref": "ipv4-addr--ff26c055-6336-5bc5-b89d-13d6226742dd",
   "src_port": 443,
-  "dst_ref": "ipv4-addr--bba1d187-08fb-5000-aed1-ef055c1dfd24",
+  "dst_ref": "ipv4-addr--5853f6a4-638f-5b4e-9b0f-ded361ae3812",
   "dst_port": 443,
   "protocols": [
     "ipv4",
@@ -47,11 +48,24 @@ Adds an extension to the network-traffic object to contain RITA beacon informati
     "https"
   ],
   "extensions": {
-    "extension-definition--3b7505ce-2a18-496e-aa58-311dac6c1473": {
-      "connections": 4022,
-      "score": 0.834,
-      "extension_type": "property-extension"
+      "extension-definition--3b7505ce-2a18-496e-aa58-311dac6c1473": {
+        "connections": 4022,
+        "score": 0.834,
+        "extension_type": "property-extension"
+      }
     }
+  },
+  {
+    "type": "ipv4-addr",  
+    "spec_version": "2.1",  
+    "id": "ipv4-addr--ff26c055-6336-5bc5-b89d-13d6226742dd",
+    "value": "198.51.100.3"  
+  },
+  {
+    "type": "ipv4-addr",  
+    "spec_version": "2.1",  
+    "id": "ipv4-addr--5853f6a4-638f-5b4e-9b0f-ded361ae3812",  
+    "value": "198.51.100.0/24"  
   }
-}
+]
 ```

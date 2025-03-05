@@ -15,7 +15,7 @@ Specifies custom atributes for the [`user-account`](https://docs.oasis-open.org/
 | gid | `integer` | Specifies the unique identifier for the group on the system/platform |
 | name | `string` | Specifies the name of the group |
 
-Example:
+### Stix 2.0 Example:
 
     {
         "0": {
@@ -28,3 +28,20 @@ Example:
             "x_group.domain": "internal.company.com"
         }
     }
+
+### Stix 2.1 Example:
+```json
+[
+  {
+    "type": "user-account",
+    "id": "user-account--1048a0ef-2c4b-57b4-b5f1-21a1043c4aff",
+    "spec_version": "2.1",
+    "x_domain": "NT AUTHORITY",
+    "user_id": "SYSTEM",
+    "account_login": "SYSTEM",
+    "x_group.gid": "515",
+    "x_group.name": "Domain local group",
+    "x_group.domain": "internal.company.com"
+  }
+]
+```

@@ -12,7 +12,7 @@ The `x-ibm-ttp-tagging` SDO describes mappings of an `x-ibm-finding` or any othe
 | **confidence** (optional) | `float` | A confidence level in the relevance of this tagging between 0 to 1, 1 being the highest. |
 | **kill-chain-phases** (optional) | `list` of type `kill-chain-phase` | The kill chain phases this mapping is related to |
 
-### Example 1:
+### Stix 2.0 Example 1:
 
 ```javascript
 {
@@ -28,7 +28,25 @@ The `x-ibm-ttp-tagging` SDO describes mappings of an `x-ibm-finding` or any othe
     ]
 }
 ```
-
+### Stix 2.1 Example 1:
+```json
+[
+  {
+    "type": "x-ibm-ttp-tagging",
+    "id": "x-ibm-ttp-tagging--3abb56a1-d2c1-5152-8c1a-c2c8ad6522f2",
+    "spec_version": "2.1",
+    "name": "Active Scanning",
+    "url": "https://attack.mitre.org/versions/v8/techniques/T1595/",
+    "confidence": 0.8,
+    "kill_chain_phases": [
+       {
+          "kill_chain_name": "mitre-attack",
+          "phase_name": "reconnaissance"
+       }
+    ]
+}
+]
+```
 
 ## mitre-attack-ext Extension
 
@@ -46,7 +64,7 @@ The key for this extension when used in the extensions dictionary **MUST** be `m
 | **technique_url** (optional) | `string` | The URL pointing to the documentation of the technique in the MITRE ATT&CK website |
 | **technique_name** (optional) | `string` | The name of the technique |
 
-### Example 1:
+### Stix 2.0 Example 2:
 
 ```json
 {
@@ -72,5 +90,34 @@ The key for this extension when used in the extensions dictionary **MUST** be `m
     }
 }
 
+```
+### Stix 2.1 Example 2:
+```json
+[
+  {
+    "type": "x-ibm-ttp-tagging",
+    "id": "x-ibm-ttp-tagging",
+    "spec_version": "2.1",
+    "name": "Active Scanning",
+    "url": "https://attack.mitre.org/versions/v8/techniques/T1595/",
+    "confidence": 0.8,
+    "kill_chain_phases": [
+      {
+        "kill_chain_name": "mitre-attack",
+        "phase_name": "reconnaissance"
+      }
+    ],
+    "extensions": {
+      "mitre-attack-ext": {
+        "tactic_id": "TA0043",
+        "tactic_url": "https://attack.mitre.org/versions/v8/tactics/TA0043/",
+        "tactic_name": "Reconnaissance",
+        "technique_id": "T1595",
+        "technique_url": "https://attack.mitre.org/versions/v8/techniques/T1595/",
+        "technique_name": "Active Scanning"
+      }
+    }
+  }
+]
 ```
 

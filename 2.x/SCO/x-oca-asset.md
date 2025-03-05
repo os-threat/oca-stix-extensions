@@ -89,9 +89,9 @@ Type Name `x-oca-interface-type`
 | **interface_id** | `string` | Specifies the interface ID. |
 | **name** | `string` | Specifies the interface name as reported by the system.|
 
-### Example 1
+### Stix 2.0 Example 1
 
-```json
+```
     {
 	    "0":
 	    {
@@ -164,8 +164,7 @@ Type Name `x-oca-interface-type`
 
   
 
-### Example 2: Stix 2.1
-The Observed Data SDO can only gather any SCO's (Observables), while the Sighting SRO is used to combine these observations with appropriate SDO's, such as `x-oca-asset` or `x-oca-geo`.
+### Example 1: Stix 2.1
 
 ```json
 [
@@ -179,8 +178,6 @@ The Observed Data SDO can only gather any SCO's (Observables), while the Sightin
     "type": "x-oca-asset",
     "spec_version": "2.1",
     "id": "x-oca-asset--fec3de6d-bfc4-4ef3-9f4b-c21aa2d57e7a",
-    "created": "2024-09-01T06:55:35.241Z",
-    "modified": "2024-09-01T06:55:35.241Z",
     "ip_refs": [
       "ipv4-addr--38609426-bc06-5cbc-9763-e77e99c9d9e4",
       "ipv6-addr--dc0ef52f-b6cf-52a0-a6a1-977b32a57063"
@@ -268,21 +265,9 @@ The Observed Data SDO can only gather any SCO's (Observables), while the Sightin
       "ipv4-addr--38609426-bc06-5cbc-9763-e77e99c9d9e4",
       "ipv6-addr--dc0ef52f-b6cf-52a0-a6a1-977b32a57063",
       "mac-addr--b5dbdbbb-5470-58c8-9b86-81b7d83a770b",
-      "ipv4-addr--f1958dd5-5175-5702-beef-742d2cf3c0ec"
-    ]
-  },
-  {
-    "type": "sighting",
-    "spec_version": "2.1",
-    "id": "sighting--49cc5c32-98b8-4d15-94bf-2f867d71a2fa",
-    "created": "2023-11-18T05:26:43.45768Z",
-    "modified": "2023-11-18T05:26:43.45768Z",
-    "sighting_of_ref": "x-oca-asset--fec3de6d-bfc4-4ef3-9f4b-c21aa2d57e7a",
-    "where_sighted_refs": [
-          "x-oca-geo--419f0ac4-2836-46f0-9985-820f7a4b7abc"
-    ],
-    "observed_data_refs": [
-      "observed-data--b67d30ff-02ac-498a-92f9-32f845f448cf"
+      "ipv4-addr--f1958dd5-5175-5702-beef-742d2cf3c0ec",
+      "x-oca-geo--419f0ac4-2836-46f0-9985-820f7a4b7abc",
+      "x-oca-asset--fec3de6d-bfc4-4ef3-9f4b-c21aa2d57e7a",
     ]
   }
 ]    

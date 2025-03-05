@@ -36,7 +36,7 @@ Adds an extension to the windows-registry-key object to include references to re
 
 ### Windows Registry Key was Modified
 
-```
+```json
 {
   "type": "windows-registry-key",
   "spec_version": "2.1",
