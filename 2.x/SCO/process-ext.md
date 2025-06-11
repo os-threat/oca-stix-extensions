@@ -9,7 +9,7 @@ Adds an extension to the process object to include references to related playboo
 | computer | `string` | Computer hostname associated with the process.
 | name | `string` | Process names or REGEX pattern to match against.
 | win_event_code | `string` | Windows Event Code number.
-| creator_user | `reference roperty` | User account associated with the process.
+| creator_user | `reference property` | User account associated with the process.
 
 ## Extension Definition
 
